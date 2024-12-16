@@ -1,0 +1,47 @@
+{
+  "name": "timezone-now",
+  "version": "1.0.0",
+  "description": "A lightweight NPM package to get the current time in any timezone using the Luxon library",
+  "main": "index.js",
+  "bin": {
+    "timezone-now": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "jest --config jest.config.js",
+    "test:watch": "jest --watch --config jest.config.js",
+    "test:coverage": "jest --coverage --config jest.config.js",
+    "postinstall": "chmod +x ./bin/cli.js"
+  },
+  "files": [
+    "index.js",
+    "bin/cli.js",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DeekshithRajBasa/timezone-now"
+  },
+  "keywords": [
+    "timezone",
+    "time",
+    "datetime",
+    "luxon",
+    "date",
+    "iana",
+    "timezone-converter",
+    "time-conversion",
+    "cli"
+  ],
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "author": "Deekshith Raj Basa <deekshithraj.basa@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "luxon": "^3.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.0"
+  }
+}
